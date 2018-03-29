@@ -398,7 +398,7 @@ function updateTabOrder(tabId) {
     }
     // reset the badge color
     chrome.browserAction.setBadgeBackgroundColor(badgeColor);
-  }, tabId === skipTabOrderUpdateTimer ? 0 : 1500);
+  }, tabId === skipTabOrderUpdateTimer ? 0 : 200);
 
   // clear the skip var
   skipTabOrderUpdateTimer = null;
